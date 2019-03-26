@@ -1,0 +1,31 @@
+html {
+    background: #cfcfcf;
+}
+
+.field {
+    border-collapse: collapse;
+    background-image: url("img/field-img.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.row {
+    width: 30px;
+    height: 30px;
+}
+.barricade{
+    width: 30px;
+    height: 30px;
+    background-image: url("img/barricade-img.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.user {
+    background-image: url(img/player-img.png);
+    background-size: cover;
+}
+
