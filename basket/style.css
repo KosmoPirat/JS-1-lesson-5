@@ -1,0 +1,9 @@
+#basket {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/basket-img.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 1px solid black;
+    margin: 5% auto;
+}

@@ -3,32 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson 4</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 5</title>
 </head>
 <body>
+
+<div id="basket"></div>
+
 <script>
     "use strict";
-    // задание 4.1
- /*   function getMyObj(intNum) {
-        if(intNum > 999) return console.log({});
-        intNum = String(intNum).split('');
-        if (intNum.length == 1) intNum.splice(0, 0, "0", "0");
-        if (intNum.length == 2) intNum.splice(0, 0, "0");
-        let obj = {
-            units: +intNum[2],
-            tens: +intNum[1],
-            hundreds: +intNum[0],
-        };
-        return console.log(obj);
-    }
-    let intNum =+(prompt('Введите число от 0 до 999 для преобразования в объект', ''));
-    while (isNaN(intNum)){
-        intNum = Number(prompt('Вы не верно ввели число, повторите попытку (пример : "3")', ''));
-    }
-    getMyObj(intNum);
-
-    // задание 4.2
-
     function getRandomInRange(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -101,33 +84,13 @@
         }
     };
 
-    let numProd = +(prompt('Введите колличество товаров которое хотели бы приобрести', ''));
+    /*let numProd = +(prompt('Введите колличество товаров которое хотели бы приобрести', ''));
     while (isNaN(numProd)){
         numProd = +(prompt('Вы не верно ввели колличество, повторите попытку (пример : "3")', ''));
     }
 
     basket.fillBasket(numProd);
-    basket.showBasket();
-
-    // задание 4.3
-    //находится в папке "consoleWalker"*/
-    var findMissing = function (list) {
-        let constant = list[2] - list[1];
-        let rez = 0
-        if(list[0] + constant !== list[1]) return list[0] + constant;
-        constant = list[1] - list[0];
-        list.forEach(function(item, index, list) {
-            if(item + constant !== list[index + 1]) {
-                (list[index + 1] == null) return rez;
-                return rez = item + constant;
-            }
-        });
-        console.log(list);
-        console.log(constant);
-        console.log(rez);
-        return rez;
-    }
-    findMissing([ 2, -1, -4, -7, -10, -13, -16, -19, -22, -25, -31, -34, -37 ]);
+    basket.showBasket();*/
 </script>
 </body>
 </html>
