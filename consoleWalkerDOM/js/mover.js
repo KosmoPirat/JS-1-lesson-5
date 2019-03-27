@@ -28,13 +28,8 @@ let mover = {
     },
 
     canPlayerMakeStep(nextPoint) {
-        if(renderer.getSquarePlayer(nextPoint) !== null) {
-            for(let i = 0; i < barricade.barArray.length - 1; i++){
-                if(renderer.getSquarePlayer(nextPoint) !== renderer.getSquareBarricade(barricade, i)) return true;
-                else return false;
-            }
-        }
-        //return renderer.getSquarePlayer(nextPoint) !== null && renderer.getSquarePlayer(nextPoint) !==
-        // renderer.getSquareBarricadeByClass();
+
+        return renderer.getSquarePlayer(nextPoint) !== null && renderer.getSquarePlayer(nextPoint) !==
+         renderer.getSquareBarricadeAndPlayer(nextPoint);
     },
 };

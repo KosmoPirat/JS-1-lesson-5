@@ -4,8 +4,8 @@ let renderer = {
     render() {
         let table = this.generateTable();
         document.body.insertAdjacentHTML('afterbegin', table);
-        this.renderUserPosition(player);
         this.renderBarricadePosition(barricade);
+        this.renderUserPosition(player);
     },
 
     generateTable() {
@@ -24,6 +24,9 @@ let renderer = {
         return document.querySelector(`[data-x="${barricade.barArray[index].x}"][data-y="${barricade.barArray[index].y}"]`);
     },
 
+    getSquareBarricadeAndPlayer(player) {
+        return document.querySelector(`.barricade[data-x="${player.x}"][data-y="${player.y}"]`);
+    },
 
     getSquarePlayer(player) {
         return document.querySelector(`[data-x="${player.x}"][data-y="${player.y}"]`);

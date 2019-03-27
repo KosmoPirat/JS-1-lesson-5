@@ -3,7 +3,7 @@
 let player = {
     x: getRandomInRange(0, config.colsCount - 1),
     y: getRandomInRange(0, config.rowsCount - 1),
-    rotateAngle: 180,
+    rotateAngle: 0,
 
     /**
      * Метод задает пользователю новое расположение.

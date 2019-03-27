@@ -1,20 +1,35 @@
 html {
     background: #cfcfcf;
 }
-
-table {
-    border-collapse: collapse;
-    background: rgb(131, 205, 240);
-}
-
-td {
-    width: 30px;
-    height: 30px;
+.chess-board-wrap {
+    width: 720px;
+    height: 720px;
+    margin: 5% auto;
+    background-color: saddlebrown;
     border: 2px solid black;
+    display: flex;
 }
 
-.user {
-    background-image: url(/img/player-img.jpg);
-    width: 30px;
-    height: 30px;
+.chess-board {
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 640px;
+    height: 640px;
 }
+
+.chess-cell {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.black-cell {
+    background-color: #000;
+}
+
+.white-cell {
+    background-color: #fff;
+}
+
+
