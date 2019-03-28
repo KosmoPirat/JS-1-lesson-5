@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4399fc05-c06e-405f-baac-ddcf8278cab4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/basket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/basket/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/basket/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basket/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="-253">
+              <caret line="99" column="60" lean-forward="true" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basket/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="529">
+              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
@@ -97,6 +98,17 @@
               <item name="JS-1-lesson-5" type="462c0819:PsiDirectoryNode" />
               <item name="basket" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JS-1-lesson-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-1-lesson-5" type="462c0819:PsiDirectoryNode" />
+              <item name="chessBoard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-1-lesson-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-1-lesson-5" type="462c0819:PsiDirectoryNode" />
+              <item name="chessBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -134,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553611727735</updated>
-      <workItem from="1553611731640" duration="23795000" />
+      <workItem from="1553611731640" duration="46037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23795000" />
+    <option name="totallyTimeSpent" value="46037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,13 +262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chessBoard/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chessBoard/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -271,17 +276,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basket/index.html">
+    <entry file="file://$PROJECT_DIR$/chessBoard/js/code.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="138">
+          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/modal/modal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/modal/modal/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/basket/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="529">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basket/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="99" column="60" lean-forward="true" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
         </state>
       </provider>
     </entry>
