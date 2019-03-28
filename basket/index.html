@@ -8,8 +8,11 @@
 </head>
 <body>
 
-<div id="basket"></div>
-
+    <div id="basket"></div>
+    <label for="num-products">Введите колличество продуктов которое хотите приобрести</label>
+    <input id="num-products" type="number" placeholder="Введие колличество">
+    <button id="basket-button">Buy</button>
+    <button id="clear-basket">Clear Basket</button>
 <script>
     "use strict";
     function getRandomInRange(min, max) {
@@ -75,22 +78,64 @@
             }
         },
 
-        showBasket(){
-            this.goodList.forEach(function (item, index) {
-                console.log(`Товар №:${index + 1}. ${item.prodName}\nЦена: ${item.prodPrice}\nКол-во: ${item.count}`);
-            });
-            console.log(`Общее кол-во товара: ${this.countTotalNumber()}`);
-            console.log(`Общая сумма покупки: ${this.countTotalPrice()}`);
-        }
     };
 
-    /*let numProd = +(prompt('Введите колличество товаров которое хотели бы приобрести', ''));
-    while (isNaN(numProd)){
-        numProd = +(prompt('Вы не верно ввели колличество, повторите попытку (пример : "3")', ''));
+    function getNumProd() {
+        let numProd = document.getElementById("num-products");
+        if (+numProd.value <= 0) {
+            alert("Не верное колличество товара повторите попытку!");
+            return numProd.value = "";
+        }
+
+        basket.fillBasket(+numProd.value);
+        basketIcon.innerHTML = basket.countTotalNumber();
+        basketIcon.style.display = "block";
+        numProd.value = '';
+        showBasket();
     }
 
-    basket.fillBasket(numProd);
-    basket.showBasket();*/
+    function showBasket() {
+        if (document.querySelector(".basket-body") == null) {
+            let basketBody = document.createElement("div"),
+                closeButton = document.createElement("div");
+            basketBody.className = "basket-body";
+            closeButton.id = "close";
+            baskeForm.insertAdjacentElement("afterend", baskeForm.appendChild(basketBody));
+            basketBody.insertAdjacentElement("afterbegin", basketBody.appendChild(closeButton));
+            document.getElementById("close").onclick = closeBasket;
+            console.log(basket.goodList);
+            if (basket.goodList.length == []) {
+                let par = document.createElement("p");
+                par.innerHTML = "Козина пуста!";
+                basketBody.insertAdjacentElement("beforeend", basketBody.appendChild(par));
+            } else {
+                let par = document.createElement("p");
+                par.innerHTML =
+                    `Колличество ваших товаров: ${basket.countTotalNumber()}<br>Сумма покупки: ${basket.countTotalPrice()}`;
+                basketBody.insertAdjacentElement("beforeend", basketBody.appendChild(par));
+            }
+        } else {
+            document.querySelector(".basket-body").remove();
+            return showBasket();
+        }
+    }
+
+    function closeBasket() {
+        document.querySelector(".basket-body").remove();
+    }
+
+    function clearBasket() {
+        basket.goodList = [];
+        basketIcon.style.display = "none";
+    }
+
+    let baskeForm = document.querySelector("#basket");
+    let basketIcon = document.createElement("div");
+    basketIcon.id = 'basket-icon';
+    baskeForm.insertAdjacentElement("afterbegin", basketIcon);
+    document.getElementById("basket-button").onclick = getNumProd;
+    document.getElementById("clear-basket").onclick = clearBasket;
+    baskeForm.onclick = showBasket;
 </script>
 </body>
 </html>
